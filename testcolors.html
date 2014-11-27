@@ -2,8 +2,13 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Test colors</title>
+ 		<meta name="viewport" content="width=device-width">
+ 		<title>Test colors</title>
 		<style>
+			@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	    		/* Retina-specific stuff here */
+			}
+
 			.label {
 /*				display: none;
 				position: absolute;
@@ -16,16 +21,16 @@
 		<script src="jquery.js"></script>
 		<script>
 			$(function() {
-				var dpr = document.cookie.indexOf('device_pixel_ratio');
+				var dpr = window.devicePixelRatio;
 				var ruta ="";
-				if(dpr==-1) {
+				if(dpr<=1) {
 					ruta = "img/Penguins_50s_100q.jpg";
-				} else if(dpr==-2) {
+				} else {
 					ruta = "img/Penguins_100s_50q.jpg";
 				}
 				$('#penguin').attr('src', ruta);
 				ruta = ruta.replace('img/','');
-				
+				ruta = ruta + ' (device_pixel_ratio=' + dpr + ')'
 
 				$('.label').html( ruta );
 
