@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-	<style>
-/*		img {
-			width: 584px;
-			height: 384px;
-		}
-*/	</style>
 	<head>
 		<meta charset="utf-8">
 		<title>Test colors</title>
+		<style>
+			.label {
+/*				display: none;
+				position: absolute;
+*/			}
+			img {
+				width: 584px;
+				height: 384px;
+			}
+		</style>
+		<script src="jquery.js"></script>
+		<script>
+			$(function() {
+				var dpr = document.cookie.indexOf('device_pixel_ratio');
+				var ruta ="";
+				if(dpr==-1) {
+					ruta = "img/Penguins_50s_100q.jpg";
+				} else if(dpr==-2) {
+					ruta = "img/Penguins_100s_50q.jpg";
+				}
+				$('#penguin').attr('src', ruta);
+				ruta = ruta.replace('img/','');
+				
+
+				$('.label').html( ruta );
+
+				// $('#penguin').mouseover( function() {
+				// 	var theTop=$(this).css('top');
+				// 	var theLeft=$(this).css('left');
+				// 	$('.label').css({ display: 'block' });
+				// 	$('.label').html($(this).attr('src'));
+				// });
+
+				// $('#penguin').mouseleave( function() {
+				// 	$('.label').css({ display: 'none' });
+				// });
+
+			})
+		</script>
 	</head>
 	<body>
-		<img src="img/Penguins_100s_50q.jpg" alt="Pingüinos">
-		<img src="img/Penguins_50s_100q.jpg" alt="Pingüinos">
+		<div class="contenedor">
+			<img id="penguin" alt="Pingüinos">
+			<div class="label"></div>
+		</div>
 	</body>
 </html>
