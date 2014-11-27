@@ -8,21 +8,14 @@
 			@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	    		/* Retina-specific stuff here */
 			}
-
-			.label {
-/*				display: none;
-				position: absolute;
-*/			}
-			img {
-				width: 584px;
-				height: 384px;
-			}
 		</style>
 		<script src="jquery.js"></script>
 		<script>
 			$(function() {
 				var dpr = window.devicePixelRatio;
 				var ruta ="";
+				var altura = 0;
+				var ancho = 0;
 				if(dpr<=1) {
 					ruta = "img/Penguins_50s_100q.jpg";
 				} else {
