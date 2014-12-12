@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ángeles Montesinos</title>
+    <meta content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0' id='viewport' name='viewport'>
+    
+    <!-- ######## Loading HOJAS DE ESTILO ########-->
+    
+    
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />  
+    <!-- Loading cubeportfolio css file -->
+    <link rel="stylesheet" href="css/cubeportfolio.css">
+    <!-- Loading Flat UI Pro -->
+    <link href="css/flat-ui-pro.css" rel="stylesheet">
+    <!-- Loading mis fuentes -->
+    <link href="css/fuentes.css" rel="stylesheet">
+    <!-- Loading mis estilos -->
+    <link href="css/estilillos.css" rel="stylesheet">
+    <!-- Loading animaciones -->
+    <link href="css/animaciones.css" rel="stylesheet">
+    <!-- Loading favicono-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    
+
+
+
+</head>
+
+<body>
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/video.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/flat-ui-pro.min.js"></script>
+    <!-- Loading Modernizr para slider plugin -->
+    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+    <!-- Loading cubeportfolio jQuery plugin -->
+    <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+    <!-- Loading google maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- load cubeportfolio plugin -->
+    <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+    <!-- load cslider plugin -->  
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <!-- Script para desplazamiento suave sin plugins -->
+    <script>
+        $(document).ready(function () {
+            //click en enlace de list
+            $('.navbar ul li a').on('click', function (e) {
+                //prevenir comportamiento predeterminado
+                e.preventDefault();
+                //obtener id del elemento para posicionar
+                var obtenerAncla = $(this).attr('href');
+                //body y html por que en algún navegador no funciona
+                $('body, html').stop(true, true).animate({
+                    //animación hacia el ancla
+                    scrollTop: $(obtenerAncla).offset().top
+                }, 1000);
+
+            }); // end click
+        });
+    </script>
+ 
+    <section id='home' class='container-fluid paraSlider'>
+                      
+            <div id="da-slider" class="da-slider col-xs-12">
+				<div class="da-slide">
+					<h2>Easy management</h2>
+					<p class='lead'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+					<a href="#" class="da-link btn btn-primary">Read more</a>
+				</div>
+                				<div class="da-slide">
+					<h2>Warm welcome</h2>
+					<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+					<a href="#" class="da-link btn btn-primary">Read more</a>
+				</div>
+				<div class="da-slide">
+					<h2>Revolution</h2>
+					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+					<a href="#" class="da-link btn btn-primary">Read more</a>
+				</div>
+
+				<div class="da-slide">
+					<h2>Quality Control</h2>
+					<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					<a href="#" class="da-link btn btn-primary">Read more</a>
+				</div>
+                
+                <nav class="da-arrows">
+					<span class="fui-arrow-right da-arrows-prev"></span>
+					<span class="fui-arrow-left da-arrows-next"></span>
+				</nav>
+			</div>
+            
+        </section>
+        <!-- FIN INICIO-->
+ <header>
+        <nav class="navbar navbar-default navbar-wrapper" role="navigation">
+            
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barra"></button>
+                </div>
+                <div class="collapse navbar-collapse" id="barra">
+                    <ul class="nav navbar-nav">
+                        <li > <a class='menuItem' href="#home" title='ir a sobre mi'> <span class='fui-home'></span></a> 
+                        </li>
+                        <li > <a class='menuItem' href="#sobreMi" title='ir a sobre mi'> SOBRE MÍ </a> 
+                        </li>
+                        <li > <a class='menuItem' href="#portfolio" title='ir a portfolio'> PORTFOLIO </a> 
+                        </li>
+                        <li > <a class='menuItem' href="#experiencia" title='ir a experiencia'> EXPERIENCIA </a> 
+                        </li>
+                        <li > <a class='menuItem' href="#educacion" title='ir a educación'> EDUCACIÓN </a> 
+                        </li>
+                        <li > <a class='menuItem' href="#contacto" title='ir a contacto'> CONTACTO </a> 
+                        </li>
+                    </ul>
+                </div>
+            
+        </nav>
+        <!--Fin navegación-->
+    </header>
+    
+<main role="main" class="container">    
+        <section class='sobreMi container'>
+            <!-- INICIO SECCIÓN SOBREMI -->
+            <div class='row'>
+                <header class='col-xs-12'>
+                    <h1> <a id='sobreMi' class='anchor'>SOBRE MÍ</a></h1>
+                    <h2> Ángeles Montesinos</h2>
+                </header>
+                <article>
+                    <p class='col-xs-12'>*Body Copy.* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper dictum sem dictum scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <h3 class='col-xs-12'> GESTORA CULTURAL & FRONT END DEVELOPER </h3> 
+                    <img class='col-xs-12 col-sm-6 col-md-5 col-lg-pull-1 col-lg-4 responsive img-circle pull-right' src='img/angelesMontesinos.jpg' alt='foto de Angeles Montesinos'>
+                    <div class='col-xs-12 col-sm-6 col-md-7  col-lg-6 pull-left'>
+                        <p>*Body Copy.* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper dictum sem dictum scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean imperdiet dignissim velit eu congue. Mauris aliquet felis at lorem imperdiet et viverra est tincidunt. Duis commodo ligula elit, sit amet auctor ipsum. Nam eu lorem quis justo gravida suscipit sed vitae eros.</p>
+                        <p>Integer volutpat euismod mi. Sed sit amet libero risus. Morbi ac dui risus. Fusce fermentum, orci eu accumsan dapibus, lacus neque pulvinar magna, in malesuada leo nisl sed ipsum. Donec sollicitudin dolor quis turpis iaculis quis porttitor leo porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper dictum sem dictum scelerisque.
+                        </p>
+                        <p>Integer volutpat euismod mi. Sed sit amet libero risus. Morbi ac dui risus. Fusce fermentum, orci eu accumsan dapibus, lacus neque pulvinar magna, in malesuada leo nisl sed ipsum. Donec sollicitudin dolor quis turpis iaculis quis porttitor leo porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper dictum sem dictum scelerisque.
+                        </p>
+                    </div>
+                    <a class=' btn btn-primary btn-lg col-xs-12 col-sm-6 col-md-5 col-lg-pull-1 col-lg-4 pull-right'>Descarga mi cv en pdf</a>
+                </article>
+            </div>
+        </section>
+        <section id='expertise' class='container'>
+            <div class='row'>
+                <h3 class='col-xs-12'> ÁREAS DE EXPERTISE </h3>
+                <div class='visible-md visible-lg row'>
+                    <img src='img/educacion/shirt.svg' class='img-responsive col-md-offset-1 col-md-2' alt='icono alusivo a consultoría'>
+                    <img src='img/educacion/responsive.svg' class='img-responsive col-md-offset-2  col-md-2' alt='icono alusivo a desarrollo web responsive'>
+                    <img src='img/educacion/imac.svg' class='img-responsive col-md-offset-2  col-md-2' alt='icono alusivo a un ordenador'>
+                </div>
+                <article class="col-md-4">
+                    <div class='col-xs-12 col-sm-2 hidden-md hidden-lg'>
+                        <img src='img/educacion/shirt.svg' class='img-responsive center-block' alt='icono alusivo a consultoría'>
+                    </div>
+                    <div class='col-xs-12 col-sm-10 col-md-12'>
+                        <h4> Planificación + Consultoría Cultural </h4>
+
+                        <p>*Body Copy.* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper dictum sem dictum scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean imperdiet dignissim velit eu congue.</p>
+
+                    </div>
+
+                </article>
+                <article class="col-md-4">
+                    <div class='col-xs-12 col-sm-2 hidden-md hidden-lg'>
+                        <img src='img/educacion/responsive.svg' class='img-responsive center-block' alt='icono alusivo a desarrollo web responsive'>
+                    </div>
+                    <div class='col-xs-12 col-sm-10 col-md-12'>
+                        <h4> Contenidos Digitales </h4>
+
+                        <p>*Body Copy.* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper dictum sem dictum scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean imperdiet dignissim velit eu congue.</p>
+
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class='col-xs-12 col-sm-2 hidden-md hidden-lg'>
+                        <img src='img/educacion/imac.svg' class='img-responsive center-block' alt='icono alusivo a un ordenador'>
+                    </div>
+                    <div class='col-xs-12 col-sm-10 col-md-12'>
+                        <h4> Diseño + Desarrollo Web </h4>
+                        <p>*Body Copy.* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper dictum sem dictum scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean imperdiet dignissim velit eu congue.</p>
+
+                    </div>
+
+                </article>
+            </div>
+        </section>
+        <!-- FIN SOBRE MI-->
+        <!-- INICIO SECCIÓN PORTFOLIO -->
+        <section class='portfolio'>
+            <header>
+                <h1> <a id='portfolio' class='anchor'>PORTFOLIO </a> </h1>
+            </header>
+
+        <div class="wrapper container">
+
+            <div id="filters-container" class="cbp-l-filters-button">
+                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                    Todos <div class="cbp-filter-counter"></div>
+                </div>
+                <div data-filter=".gestionCultural" class="cbp-filter-item ">
+                    Gestión Cultural <div class="cbp-filter-counter"></div>
+                </div>
+                <div data-filter=".contenidosDigitales" class="cbp-filter-item">
+                    Contenidos Digitales <div class="cbp-filter-counter"></div>
+                </div>
+                <div data-filter=".desarrolloWeb" class="cbp-filter-item">
+                    Desarrollo Web <div class="cbp-filter-counter"></div>
+                </div>
+            </div>
+        </div>
+        <div id="grid-container" class="cbp-l-grid-projects">
+            <ul>
+                <li class="cbp-item gestionCultural">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/1.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project1.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title">Museo de las Colecciones Reales. Diagnosis y Bases estratégicas </div>
+                    <div class="cbp-l-grid-projects-desc"> Gestión Cultural </div>
+                </li>
+                <li class="cbp-item desarrolloWeb">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/2.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project2.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title"> Entrénate MB Coaching </div>
+                    <div class="cbp-l-grid-projects-desc"> Desarrollo Web </div>
+                </li>
+                <li class="cbp-item desarrolloWeb">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/3.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project3.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title"> MobilityLAB</div>
+                    <div class="cbp-l-grid-projects-desc">Desarrollo Web</div>
+                </li>
+                <li class="cbp-item gestionCultural contenidosDigitales">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/4.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project4.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="http://www.museusdelleida.cat/wp-content/uploads/2013/11/Dossier-definitiu.pdf" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title">Dossier de Prestigio XMTLIA</div>
+                    <div class="cbp-l-grid-projects-desc"> Contenidos Digitales</div>
+                </li>
+                <li class="cbp-item gestionCultural">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/5.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project5.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title"> Diagnóstico del contexto y modelos internacionales de referencia para la implantación del Museo Nacional de Etnografía en Teruel </div>
+                    <div class="cbp-l-grid-projects-desc"> Gestión Cultural</div>
+                </li>
+                <li class="cbp-item gestionCultural">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/6.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project6.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title"> Memoria Democrática de Palamós</div>
+                    <div class="cbp-l-grid-projects-desc"> Gestión Cultural </div>
+                </li>
+                <li class="cbp-item gestionCultural">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/7.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project7.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title"> Centro de Artes Visuales de Amposta</div>
+                    <div class="cbp-l-grid-projects-desc">Gestión Cultural</div>
+                </li>
+                <li class="cbp-item gestionCultural">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/8.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project8.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title">PECCAT de Constantí</div>
+                    <div class="cbp-l-grid-projects-desc"> Gestión Cultural</div>
+                </li>
+                <li class="cbp-item gestionCultural">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/9.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project9.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title">PECCAT de Calonge</div>
+                    <div class="cbp-l-grid-projects-desc">Gestión Cultural</div>
+                </li>
+                <li class="cbp-item gestionCultural">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/10.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project10.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title">Museo de la Fachada de la Catedral de Pamplona</div>
+                    <div class="cbp-l-grid-projects-desc">Gestión Cultural</div>
+                </li>
+                <li class="cbp-item desarrolloWeb">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/11.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project11.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title"> Integral World Education </div>
+                    <div class="cbp-l-grid-projects-desc"> Desarrollo Web</div>
+                </li>
+                <li class="cbp-item gestionCultural">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="img/proyectos/12.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="ajax/project12.html" class="cbp-singlePage cbp-l-caption-buttonLeft">ver más</a>
+                                    <a href="#" class="cbp-l-caption-buttonRight" > web </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbp-l-grid-projects-title"> Plan Director Hospital de los Marqueses de Linares</div>
+                    <div class="cbp-l-grid-projects-desc"> Gestión Cultural</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cbp-l-loadMore-button">
+            <a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">CARGAR MÁS</a>
+        </div>
+                
+               
+
+
+
+                <!-- FIN EJEMPLOS DE PROYECTOS REEMPLAZAR -->
+            
+        <!-- FIN PORTFOLIO-->
+        </section>
+        <section class='experiencia container'>
+            <!-- INICIO SECCIÓN EXPERIENCIA -->
+            <div class='row'>
+                <header class='col-xs-12'>
+                    <h1> <a id='experiencia' class='anchor'> EXPERIENCIA </a></h1>
+                </header>
+                <article class='currele col-xs-12 col-md-6'>
+                    <div class='fechasCurrele col-xs-3'>
+                        <time class="dtstart center-block" datetime="2014-07-01">Julio 2014</time>
+                        <time class="dtend center-block" datetime="2014-05-31">Actualidad</time>
+                    </div>
+                    <div class='cuerpoCurrele col-xs-9'>
+                        <h2 class='h4'> Freelance <small> <a href='http://www.arspixelica.com' target="_blank"> ArsPixelica </a></small></h2>
+
+                        <p>En la actualidad colaboro como freelance en:</p>
+                        <ul class='list-unstyled'>
+                            <li>Consultoría cultural colaborando con otras empresas</li>
+                            <li>Creación de páginas web, diseño y desarrollo responsive en HTML5, CSS3, jQuery y Javascript</li>
+                            <li>Creación de contenidos y mantenimiento de páginas web</li>
+                            <li>Jurado en el <a href='http://appcircus.com/event/madrid' target="_blank">AppCircus Madrid 2014 </a>
+                            </li>
+                            <li>Jurado online en el <a href="http://appscultura.hackathome.com/jurat/" target="_blank"> AppsCultura 2014 </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </article>
+
+                <article class='currele col-xs-12 col-md-6'>
+                    <div class='fechasCurrele col-xs-3 .col-lg-2'>
+                        <time class="dtstart center-block" datetime="2014-07-01">Diciembre 2013</time>
+                        <time class="dtend center-block" datetime="2014-05-31">Mayo 2014</time>
+                    </div>
+                    <div class='cuerpoCurrele col-xs-9 .col-lg-'>
+                        <h2 class='h4'>Técnico de Soporte al Usuario - Francés Nativo <small> <a href='http://www.open-groupe.fr' target="_blank"> Open Groupe </a>  </small> </h2>
+                        <ul class='list-unstyled'>
+                            <li>Resolución de incidencias informáticas de los sistemas e infraestructuras (Active Directory, MS Exchange, Outlook, Redes, Windows XP)</li>
+                            <li>Usando herramientas de ITSM (BMC - Remedy)</li>
+                            <li>Prototipado en baja y alta fidelidad de la nueva herramienta de ticketing</li>
+                        </ul>
+                    </div>
+                </article>
+                <div class='clearfix'></div>
+                <article class='currele col-xs-12 col-md-6'>
+                    <div class='fechasCurrele col-xs-3'>
+                        <time class="dtstart center-block" datetime="2012-05-01">Mayo 2012</time>
+                        <time class="dtend center-block" datetime="2013-12-31">Diciembre 2013</time>
+                    </div>
+                    <div class='cuerpoCurrele col-xs-9'>
+                        <h2 class='h4'> HP – Mobile Analyst (Nivel 4) <br> HP – Mobile Support Specialist (Nivel 3)  <small> <a href='http://www.open-groupe.fr' target="_blank"> Open Groupe </a> para <a href='http://www.hp.com' target="_blank">Hewlett Packard </a> </small> </h2>
+                        <ul class='list-unstyled'>
+                            <li>Gestión y soporte (usando herramientas ITSM HPSM) de la flota móvil de Hewlet Packard en la zona de EMEA (70.000 líneas en 23 países)</li>
+                            <li>Mantenimiento de las páginas web informativas para los usuarios con HTML5, CSS3, Javascript y jQuery</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class='currele col-xs-12 col-md-6'>
+                    <div class='fechasCurrele col-xs-3'>
+                        <time class="dtstart center-block" datetime="2011-07-01">Julio 2011</time>
+                        <time class="dtend center-block" datetime="2012-04-30">Abril 2012</time>
+                    </div>
+                    <div class='cuerpoCurrele col-xs-9'>
+                        <h2 class='h4'> Overseas Education Consultant - Spanish Market (Brasil) <small> <a href='http://www.integralworldeducation.fr' target="_blank"> Integral World Education and Immigration  </a> </small></h2>
+                        <ul class='list-unstyled'>
+                            <li>Redacción del plan de negocio y plan de márqueting</li>
+                            <li>Diseño y contenidos de la Página web (con HTML5, CSS3, Javascript y jQuery)</li>
+                        </ul>
+                    </div>
+                </article>
+                <div class='clearfix'></div>
+                <article class='currele col-xs-12 col-md-6'>
+                    <div class='fechasCurrele col-xs-3 '>
+                        <time class="dtstart center-block" datetime="2010-09-01">Septiembre 2010</time>
+                        <time class="dtend center-block" datetime="2011-06-15">Junio 2011</time>
+                    </div>
+                    <div class='cuerpoCurrele col-xs-9'>
+                        <h2 class='h4'> Consultora senior en Gestión Cultural (Barcelona) <small> <a href='http://www.artimetria.com' target="_blank"> <span class='arti'>ARTI</span><span class='metria'>metria</span> 
+                    </a></small></h2>
+                        <p>Gestión cultural, planificación estratégica y de márketing de equipamientos culturales, investigación y benchmarking.</p>
+                    </div>
+                </article>
+                <article class='currele col-xs-12 col-md-6'>
+                    <div class='fechasCurrele col-xs-3'>
+                        <time class="dtstart center-block" datetime="2009-10-01">Octubre 2009</time>
+                        <time class="dtend center-block" datetime="2010-06-15">Junio 2010</time>
+
+                    </div>
+                    <div class='cuerpoCurrele col-xs-9'>
+                        <h2 class='h4'> Videogames + Web Tester (Canadá)<small>
+                 <a href='http://www.bug-tracker.com' target="_blank">Laboratoires Bug-Tracker </a>,
+                    <a href='http://www.mondemedia.com' target="_blank">Monde Media Translation</a> y
+                    <a href='http://www.babelmedia.com' target="_blank">Babel Media</a> </small></h2>
+
+                        <ul class='list-unstyled'>
+                            <li>Traducción y depuración de errores de software y páginas web del inglés y francés al castellano.</li>
+                            <li>Correctora y traductora de videojuegos de clase AAA (Test Drive Unlimited 2, Uneslaved, Metro 2033, etc.)</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class='currele col-xs-12'>
+                    <div class='fechasCurrele col-xs-3'>
+                        <time class="dtstart center-block" datetime="2003-10-01">Octubre 2003</time>
+                        <time class="dtend center-block" datetime="2010-07-15">Julio 2009</time>
+                    </div>
+                    <div class='cuerpoCurrele col-xs-9'>
+                        <h2 class='h4'>Project Manager en planificación estratégica del patrimonio, turismo cultural y nuevas tecnologías  (Barcelona) <small> <a href='http://www.stoa.es' target="_blank">STOA, Propuestas culturales y turísticas </a></small></h2>
+                        <ul class='list-unstyled'>
+                            <li><strong>Project Manager y consultor senior en Patrimonio y Museología:</strong> participación en todo el proceso desde la elaboración de la propuesta hasta la gestión de costes, identificación de tareas, creacción y motivación del equipo con recursos internos y externos y gestión de tiempos hasta la presentación final al cliente.</li>
+
+                            <li><strong>Project Leader en Proyectos de Movilidad:</strong> diseño de la experiencia de usuario, investigación de las soluciones de software y hardware, creación de la historia, guionización y el proceso de juego para el usuario final.</li>
+
+                            <li><strong>Profesora invitada en Másters Oficiales y Redes internacionales</strong> sobre <em>el uso de aplicaciones móviles en museos y sitios patrimoniales</em> en la Universidad de Barcelona, en laUniversidad Internacional de Catalunya, en la red Rehabimed, en el MediaFEST de Hewlett Packard Laboratories, entre otros.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- FIN EXPERIENCIA-->
+        <!-- INICIO SECCIÓN EDUCACIÓN -->
+        <section class='educacion container'>
+            <div class='row'>
+                <header class='col-xs-12'>
+                    <h1 class='col-xs-12'> <a id='educacion' class='anchor'>EDUCACIÓN</a></h1>
+                </header>
+                <article class='curso col-xs-12'>
+                    <header class='curso col-xs-12'>
+                        <div class='fechasCursos text-right'>
+                            <time class="dtstart" datetime="2014-07-01">Julio 2014</time>—
+                            <time class="dtend" datetime="2014-12-19">Diciembre 2014</time>
+                        </div>
+                        <h2 class="h4"> 
+                            <a href="https://www.sepe.es/contenidos/personas/formacion/certificados_de_profesionalidad/pdf/fichasCertificados/IFCD0110_ficha.pdf" target="_blank"> Certificado de profesionalidad de confección y publicación de páginas web (HTML5 & CSS3, Javascript y JQuery) </a> <small> 560 horas</small></h2>
+
+                    </header>
+
+                    <img src="img/educacion/macbook.svg" class='img-responsive col-xs-3 col-sm-2' alt='icono alusivo a desarrollo web'>
+
+                    <p class='col-xs-9 col-sm-10'>Crear y publicar páginas web que integren textos, imágenes y otros elementos, utilizando lenguajes de marcas y editores apropiados, según especificaciones y condiciones de "usabilidad" dadas y realizar los procedimientos de instalación y verificación de las mismas en el servidor correspondiente.</p>
+
+                    <p class='curso col-xs-12'>Otorgado por: <a href='#'> Ministerio de Empleo y Seguridad Social</a>
+                    </p>
+
+                </article>
+                <article class='curso col-xs-12'>
+                    <header class='col-xs-12'>
+                        <div class='fechasCursos text-right'>
+                            <time class="dtstart" datetime="2012-09-01">Septiembre 2012</time>—
+                            <time class="dtend" datetime="2014-03-31">Junio 2014</time>
+                        </div>
+                        <h2 class="h4"> <a href='http://estudios.uoc.edu/es/masters-universitarios/aplicaciones-multimedia' target="_blank"> Master Universitario en Aplicaciones Multimedia </a> <small> 1.500 horas </small></h2>
+                    </header>
+
+                    <img src="img/educacion/app%20store.svg" class='img-responsive col-xs-3 col-sm-2' alt='icono alusivo a aplicaciones moviles'>
+                    <p class='col-xs-9 col-sm-10'>Especialización en la producción (diseño y desarrollo) de contenidos y aplicaciones digitales multimedia y su gestión, publicación y difusión por la red, haciendo hincapié en su aplicación para dispositivos móviles.</p>
+                    <ul class='list-unstyled col-xs-12 '>
+                        <li class='col-sm-6 col-lg-4'>Tecnologías y aplicaciones multimedia (Producción, Marketing, Gestión)
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Producción multimedia (Agile, Scrum, Kanban)
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Promoción y posicionamiento en la web (SEO, SEM, Analytics)
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Gestión avanzada de proyectos TIC (PMP)
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Dirección estratégica de sistemas y tecnologías de la información
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Diseño de interfaces interactivas (UIX, UI)
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Plataformas de distribución de contenidos
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Tecnologías y herramientas para el desarrollo web (Bootstrap, jQuery,...)
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Programación (PHP)
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Programación avanzada web (Javascript)
+                        </li>
+                        <li class='col-sm-6 col-lg-4'>Lenguajes y estándares web (HTML5, CSS3)
+                        </li>
+                    </ul>
+
+                    <p class='col-xs-12'>Otorgado por: <a href='www.uoc.edu'> Universitat Oberta de Catalunya </a>
+                    </p>
+                </article>
+                <article class='curso col-xs-12'>
+                    <header class='col-xs-12'>
+                        <div class='fechasCursos text-right'>
+                            <time class="dtstart" datetime="2013-01-01">Enero 2013</time>—
+                            <time class="dtend" datetime="2013-09-30">Septiembre 2013</time>
+                        </div>
+                        <h2 class="h4"> <a href="http://www.seeway.net/curso-diseno-sitios-web-interactivos-174.html" target="_blank">Técnico Superior en Diseño de Sitios Web Interactivos </a> <small> 200 horas </small></h2>
+                    </header>
+
+                    <img src="img/educacion/touch.svg" class="img-responsive col-xs-3 col-sm-2" alt='icono alusivo a desarrollo web responsive'>
+                    <p class='col-sm-10'>Curso de diseño web dirigido a para plantear y conceptualizar proyectos web, conociendo las posibilidades y limitaciones tecnológicas, dominando los lenguajes HTML5, XHTML y las Hojas de Estilo CSS3. Además se aprende a programar con JavaScript, Ajax y Jquery para poder crear interacciones con el usuario, implementar comportamientos dinámicos, validaciones avanzadas de formularios, cargas externas de datos, crear menús despegables, etc…
+
+                    </p>
+                    <ul class='list-unstyled col-xs-12'>
+                        <li class='col-xs-3'>HTML</li>
+                        <li class='col-xs-3'>XHTML</li>
+                        <li class='col-xs-3'>CSS</li>
+                        <li class='col-xs-3'>HTML5</li>
+                        <li class='col-xs-3'>CSS3</li>
+                        <li class='col-xs-3'>Javascript</li>
+                        <li class='col-xs-3'>AJAX</li>
+                        <li class='col-xs-3'>JQuery</li>
+                    </ul>
+
+                    <p class='col-xs-12'>Diploma obtenido con <strong> Matrícula de Honor </strong> y otorgado por <a href='www.seeway.com'>Seeway, Escuela de Diseño, Tecnología y Comunicación Digital </a>
+                    </p>
+                </article>
+                <article class='curso col-xs-12'>
+                    <header class='col-xs-12'>
+                        <div class='fechasCursos text-right'>
+                            <time class="dtstart" datetime="2006-01-01">Septiembre 2006</time>—
+                            <time class="dtend" datetime="2010-06-30">Junio 2010</time>
+                        </div>
+                        <h2 class="h4"><a href='#'>Diplomatura en Ciencias Económicas y Empresariales </a><small> 39/42 asignaturas superadas (90%) </small></h2>
+                    </header>
+
+                    <img src="img/educacion/graph.svg" class='img-responsive col-xs-3 col-sm-2' alt='icono alusivo a educacion en economia y empresa'>
+                    <p class='col-xs-9 col-sm-10'>La diplomatura de Ciencias Empresariales tiene como objetivo formar a profesionales de la empresa y prepararles para contribuir al éxito de las organizaciones y las empresas innovadoras que quieren afrontar los retos de una sociedad global.</p>
+
+
+                    <p class='col-xs-12'>Impartida por: <a href='www.uoc.edu'> Universitat Oberta de Catalunya </a>
+                    </p>
+                </article>
+                <article class='curso col-xs-12'>
+                    <header class='col-xs-12'>
+                        <div class='fechasCursos text-right'>
+                            <time class="dtstart" datetime="2002-09-01">Septiembre 2003</time>—
+                            <time class="dtend" datetime="2003-07-31">Julio 2004</time>
+                        </div>
+                        <h2 class="h4"> <a href="http://estudios.uoc.edu/latam/maestrias/diploma-posgrado/artes-humanidades/interpretacion-patrimonio/programa_academico" target="_blank">
+                           Interpretación del patrimonio UOC-UIB Diploma de Posgrado
+  </a> <small> 750 horas</small></h2>
+                    </header>
+
+                    <img src="img/educacion/flower.svg" class='img-responsive col-xs-3 col-sm-2' alt='icono alusivo a patrimonio'>
+
+                    <p class='col-xs-9 col-sm-10'>El posgrado tiene como objetivo la formación de especialistas en el ámbito de la interpretación ambiental y del patrimonio, proporcionándoles un conocimiento amplio del tema y combinando la teoría y la práctica con la finalidad de capacitarlos para diseñar programas de intervención en esta materia.
+
+</p>
+
+                    <ul class='list-unstyled col-xs-9 col-sm-10'>
+                        <li>Fundamentos y marco conceptual de la interpretación</li>
+						<li>Los medios interpretativos</li>
+						<li>Planificación interpretativa</li>
+						<li>Los públicos del patrimonio y la comunicación en interpretación</li>
+						<li>Diseño y evaluación de proyectos culturales</li>
+						<li>Prácticas y casos de patrimonio cultural</li>
+                    </ul>
+                    <p class='col-xs-12'>Postgrado obtenido <strong lang="en"> con Sobresaliente </strong> y otorgado por <a href='#'>la UOC</a>
+                    </p>
+                </article>
+                <article class='curso col-xs-12'>
+                    <header class='col-xs-12'>
+                        <div class='fechasCursos text-right'>
+                            <time class="dtstart" datetime="2002-09-01">Septiembre 2002</time>—
+                            <time class="dtend" datetime="2003-07-31">Julio 2003</time>
+                        </div>
+                        <h2 class="h4"> <a href="http://www.birmingham.ac.uk/postgraduate/courses/taught/ironbridge/heritage-management.aspx#CourseDetailsTab" target="_blank">
+                           Master of Arts in Heritage Management </a> <small> 1.800 horas</small></h2>
+                    </header>
+
+                    <img src="img/educacion/mortarboard.svg" class='img-responsive col-xs-3 col-sm-2' alt='icono alusivo a patrimonio'>
+
+                    <p class='col-xs-9 col-sm-10'>El Master proporciona a los futuros managers habilidades transferibles en diferentes campos de especialización como gestión de colecciones, estudios de visitantes, museos, gestión de sitios arqueológicos, interpretación de parques históricos, etc. Se compone de cinco módulos:</p>
+
+                    <ul class='list-unstyled col-xs-9 col-sm-10'>
+                        <li>Heritage Conservation Management</li>
+                        <li>Heritage Interpretation</li>
+                        <li>Heritage Management Practice</li>
+                        <li>Critical Approaches to Heritage</li>
+                        <li>Research Skills and Methods</li>
+                    </ul>
+                    <p class='col-xs-12'>Master obtenido <strong lang="en"> with Honours </strong> y otorgado por <a href='#'>Ironbridge Institute, Birmingham University (Inglaterra)</a>
+                    </p>
+                </article>
+                <article class='curso col-xs-12'>
+                    <header class='col-xs-12'>
+                        <div class='fechasCursos text-right'>
+                            <time class="dtstart" datetime="1999-09-01">Septiembre 1999</time>—
+                            <time class="dtend" datetime="2002-07-31">Julio 2002</time>
+                        </div>
+                        <h2 class='h4'> <a href="http://www.uclouvain.be/arke" target="_blank">Licence en Histoire de l’Art et de l’Archaeologie </a></h2>
+                    </header>
+                    <img src="img/educacion/art.svg" class='img-responsive col-xs-3 col-sm-2' alt='icono alusivo a arte'>
+                    <p class='col-xs-9 col-sm-10'>Tras estudiar el primer ciclo en <a href='http://www.uax.es' target="_blank"> la Universidad Alfonso X el Sabio</a> y tras un periodo de erasmus de 4 meses en Lovain la Neuve decidí mudarme allí a seguir una especialización de segundo ciclo en Egiptología.</p>
+                    <p class='col-xs-9 col-sm-10'>Me licencié con Distinción (sobresaliente) mediante la presentación de la tesina de licenciatura en egiptología de: <a href='http://bib.uclouvain.be' target="_blank">  L'expression de la terreur dans les scènes de bataille et les prise de ville de l'Ancienne Egypte  </a>.
+                        <p class='col-xs-12 '>Licenciatura obtenida <strong lang="fr"> avec Dintinction </strong> y otorgado por <a href='www.ucl.ac.be'> Université Catholique de Louvain la Neuve (Bélgica)</a>
+                        </p>
+
+                </article>
+                <section class='skills col-xs-12'>
+                    <h2 class='col-xs-12'> Habilidades</h2>
+
+                    <article class='col-xs-12 col-md-6'>
+                        <h3> Idiomas </h3>
+                        <ul class="list-unstyled" id='idiomas'>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>Castellano</h4>
+                                <span class='h5 col-xs-6  col-sm-7 castellano skills-hide center-block'> materna </span>
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>Inglés</h4>
+                                <span class='h5 col-xs-6 col-sm-7 ingles skills-hide center-block'> alto </span>
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>Francés</h4>
+                                <span class='h5 col-xs-6 col-sm-7 frances skills-hide center-block'> bilingue </span>
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>Portugués (Brasileño)</h4>
+                                <span class='h5 col-xs-6 col-sm-7 portugues skills-hide center-block'> básico </span>
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>Catalán</h4>
+                                <span class='h5 col-xs-6 col-sm-7 catalan skills-hide center-block'> intermedio </span>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class='col-xs-12 col-md-6'>
+                        <h3> Metodologías y Frameworks de gestión </h3>
+                        <ul class="list-unstyled">
+
+                            <li class='h5 col-xs-3 col-md-6'>
+                                <img src="img/logos/itil.png" class="img-responsive" alt='logo de itil'>
+                            </li>
+                            <li class='h5 col-xs-3 col-md-6'>
+                                <img src="img/logos/scrum.png" class="img-responsive" alt='logo de scrum'>
+                            </li>
+                            <li class='h5 col-xs-3 col-md-6 pull-right'>
+                                <img src="img/logos/PMI_logo.png" class="img-responsive" alt='logo de PMI'>
+                            </li>
+                            <li class='h5 col-xs-3 col-md-6'>
+                                <img src="img/logos/kanban.png" class="img-responsive" alt='logo de kanban'>
+                            </li>
+
+                        </ul>
+                    </article>
+                    <div class='clearfix'></div>
+                    <article class='col-xs-12 col-md-6 pull-right'>
+                        <h3> Programación </h3>
+                        <ul class="list-unstyled">
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>HTML5</h4>
+                                <span class='h5 col-xs-6 col-sm-7 html5 skills-hide center-block'> alto </span> 
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>CSS3</h4>
+                                <span class='h5 col-xs-6 col-sm-7 css3 skills-hide center-block'> alto </span> 
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>Javascript</h4>
+                                <span class='h5 col-xs-6 col-sm-7 javascript skills-hide center-block'> medio </span> 
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>jQuery</h4>
+                                <span class='h5 col-xs-6 col-sm-7 jquery skills-hide center-block'> medio </span> 
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>Wordpress</h4>
+                                <span class='h5 col-xs-6 col-sm-7 wordpress skills-hide center-block'> medio </span> 
+                            </li>
+                            <li class='row'>
+                                <h4 class='h5 col-xs-6 col-sm-5'>jQuery UI, Bootstrap</h4>
+                                <span class='h5 col-xs-6 col-sm-7 frameworks skills-hide center-block'> medio </span>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class='col-xs-12 col-md-6 pull-left'>
+                        <h3> Software</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4 class='h5'>Programas de diseño y wireframing:  </h4>Adobe Ilustrator, Dreamweaver, Balsamiq Mockup, Axure</li>
+                            <li>
+                                <h4 class='h5'> MS Office: </h4> Word, Excel, Powerpoint, Visio, Project</li>
+                            <li>
+                                <h4 class='h5'> Bug trackers:  </h4>Mantis, JIRA, bug tracker</li>
+                            <li>
+                                <h4 class='h5'> Herramientas de ticketing y ITSM:  </h4>HPSM, BMC, Microsoft Sharepoint</li>
+                        </ul>
+
+                    </article>
+                </section>
+            </div>
+            </section>
+        <!-- FIN EDUCACIÓN-->
+        <section class='contacto container'>
+            <!-- INICIO SECCIÓN CONTACTO -->
+            <div class='row'>
+                <header>
+                    <h1 class='col-xs-12'> <a id='contacto' class='anchor'> CONTACTO </a></h1>
+                </header>
+
+                <article class='col-xs-12'>
+
+                    <h2> Físicamente estoy aquí:</h2>
+                    <div id="map-canvas"></div>
+
+                    <address>
+                  <strong>Ángeles Montesinos</strong><br>
+                  Calle Matías de la Fuente<br>
+                  Madrid 28034<br>
+                  <abbr title="Phone">P:</abbr> (+34) 688 99 77 14
+                </address>
+                </article>
+                <article class='col-xs-12 col-sm-6'>
+                    <h2> Virtualmente aquí: </h2>
+                    <ul class=' list-unstyled rrss'>
+                        <li class='  col-xs-3 col-md-2'>
+                            <a href='https://github.com/arspixelica' target="_blank">
+                                <img src="img/iconos/github.svg" alt='logo de github'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='' target="_blank">
+                                <img src="img/iconos/instagram.svg" alt='logo de instagram'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='' target='_blank'>
+                                <img src="img/iconos/linkedin.svg" alt='logo de linkedin'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='' target="_blank">
+                                <img src="img/iconos/mail.svg" alt='logo de mail'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='' target="_blank">
+                                <img src="img/iconos/pinterest.svg" alt='logo de pinterest'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='https://twitter.com/ArsPixelica' target="_blank">
+                                <img src="img/iconos/twitter.svg" alt='logo de twitter'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='https://www.facebook.com/arspixelica' target="_blank">
+                                <img src="img/iconos/facebook-square.svg" alt='logo de facebook'> 
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='#' target="_blank">
+                                <img src="img/iconos/flickr.svg" alt='logo de flirck'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='https://plus.google.com/u/0/+AngelesMontesinos' target="_blank">
+                                <img src="img/iconos/googleplus-square.svg" alt='logo de googleplus'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='' target="_blank">
+                                <img src="img/iconos/skype.svg" alt='logo de skype'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='' target="_blank">
+                                <img src="img/iconos/stackoverflow.svg" alt='logo de stackoverflow'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='' target="_blank">
+                                <img src="img/iconos/wordpress.svg" alt='logo de wordpress'>
+                            </a>
+                        </li>
+                        <li class='col-xs-3 col-md-2'>
+                            <a href='' target="_blank">
+                                <img src="img/iconos/youtube.svg" alt='logo de youtube'>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </article>
+                <article class='col-xs-12 col-sm-6'>
+                    <h2> ¡Mándame un mensaje! </h2>
+
+                    <form action="#" class="form-group" id="contact" method="post" name="contact">
+
+                        <div class='form-group'>
+                            <label class="form_home" for="name">Nombre:</label>
+                            <input class='form-control' id="name" placeholder="O nickname, como quieras" required type="text">
+                            <p class="help-block">Escribe aquí tu nombre</p>
+                        </div>
+
+                        <div class='form-group'>
+                            <label for="email">Email:</label>
+                            <input class='form-control' id="email" name="email" placeholder="mimama@memima.es" required type="email">
+                            <p class="help-block">Sólo para contactarte</p>
+                        </div>
+
+                        <div class='form-group'>
+                            <label class="form_home" for="website">Sitio Web:</label>
+                            <input class='form-control' id="website" name="web" placeholder="www.arspixelica.com" type="url">
+                            <p class="help-block">Si tienes</p>
+                        </div>
+
+                        <div class='form-group'>
+                            <label class="form_home" for="Mensaje">Mensaje:</label>
+                            <textarea class='form-control' cols="40" id="Mensaje" name="Mensaje" placeholder="Te quiero contratar!!!, es broma, comenta lo que quieras, bueno... broma del todo no era ;) si crees que te puedo echar una mano en un proyecto profesional, ni lo dudes" required="" rows="6"></textarea>
+                        </div>
+
+                        <div class='form-group'>
+                            <label class="checkbox" for="protecciondatos">
+                                <input id="protecciondatos" name="accept-this-1" type="checkbox" value="1">Acepto
+                                <a href="protecciondatos.html">la política de protección de datos</a>
+                            </label>
+                        </div>
+
+                        <button class="submit btn btn-primary btn-lg col-xs-12 " type="submit">Let's rock and roll!</button>
+
+                    </form>
+                </article>
+            </div>
+        </section>
+        <!-- FIN CONTACTO -->
+
+    </main>
+    <footer class="container-fluid">
+
+        <p>Ángeles Montesinos de la Fuente | angeles@arspixelica.com | +34 688 99 77 14 </p>
+    </footer>
+  
+        <script type="text/javascript">
+                    $(function() {
+
+                        $('#da-slider').cslider({
+                            autoplay	: true,
+					        bgincrement	: 450          
+                        });
+			         });
+		</script>
+    
+    <!-- load main js -->
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <!-- ### IMPORTANT ### stickUp javascript file -->
+    <!-- ######################################### --> 
+    <script src="js/stickUp.min.js"></script>
+    <!-- ######################################### -->
+
+    <!-- ### IMPORTANT ### stickUp options in use -->
+    <!-- ######################################## -->
+    <script type="text/javascript">
+      jQuery(function($) {
+        $(document).ready( function() {
+          $('.navbar-wrapper').stickUp({
+                        parts: {
+                            0:'home',    
+                          1:'sobreMi',
+                          2:'portfolio',
+                          3: 'experiencia',
+                          4: 'educacion',
+                          5: 'contacto',
+                        },
+                        itemClass: 'menuItem',
+                        itemHover: 'active',
+                        topMargin: 'auto'
+                      });
+        });
+      });
+    </script>
+        <!-- Google Maps script -->
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(40.495772, -3.68809),
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</body>
+
+</html>

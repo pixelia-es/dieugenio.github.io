@@ -1,0 +1,244 @@
+
+
+/*Especiales para nombres de empresas*/
+
+.arti {font-family: "Times New Roman";}
+.metria {font-family: arial;}
+
+/* Hacks*/
+
+
+.anchor {padding-top: 90px; margin-top: -90px;} /*Para que el header no oculte los títulos al estar en posición fix*/
+
+.paraSlider {
+padding: 0;
+margin: 0;
+}
+
+.sobreMi p, 
+#expertise p,
+.cuerpoCurrele p,
+.cuerpoCurrele ul {color: #555;} /* Gris en los párrafos de la sección SobreMI*/
+
+.navbar-wrapper {z-index: 2;} /* Para traer el header delante cuando está fijo*/
+.cbp-popup-navigation  {z-index: 3;}
+#grid-container {z-index: 1;}
+.isStuck {width: 100%;} /*amplia el header al 100% en versión móvil cuando fijo*/
+
+/*Dándo aire a la web */
+
+h3 {margin-bottom: 1em;}
+
+section {
+        margin-top: 1em;
+        margin-bottom: 1em;
+}
+
+article,
+section {margin-bottom: .6em;}
+
+.curso  {
+margin-bottom: 1em;
+}
+
+
+.active {
+        color: #FFF !important;
+        opacity: 1 !important;
+        background-color: #C0392B;
+        display: block;
+}
+/*Modificaciones de márgenes para versión móvil */
+
+    @media (max-width: 767px) {
+
+        .expertise div {
+                        margin-top: .5em;
+                        margin-bottom: .5em;
+        }
+        
+        .currele {margin-bottom: 10px;}
+        
+        #expertise img  { width: 30%;}
+        
+        .sobreMi img {
+                      float: left;
+                      max-width:253px;
+        }   
+
+    }
+/*Modificaciones de márgenes para más grande que móvil */
+    @media (min-width: 768px ) {
+        
+        img.col-xs-12 {
+                        margin-top: 45px;
+                        margin-bottom: 45px;
+        }
+
+        #expertise img {margin-top: 20px;}
+    
+        .navbar .navbar-nav {
+                display: inline-block;
+                float: none;
+                vertical-align: top;
+        }
+
+        .navbar .navbar-collapse {
+                text-align: center;
+        }
+        .sobreMi img {
+        margin-top: 0;
+        padding-left: 0;
+        }
+        
+        .navbar-default,
+        .navbar-default .navbar-nav > li > a:hover, 
+        .navbar-default .navbar-nav > li > a:focus {
+            background-color: #C0392B;
+
+        }
+    }
+
+/*Cambios de formato en HEADER */
+
+.navbar-default {
+                    background-color:/*  #ecf0f1*/ #e74c3c;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-toggle:hover::before{ 
+                                                color: white !important;
+
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {border:none;}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-toggle::before{
+                                        color: white;
+
+}  
+/*
+
+#barra {background-color: #E74C3C;}
+*/
+
+
+/*Cambios de formato en SOBRE MI */
+
+.sobreMi img {
+            max-width:353px;
+            vertical-align: inherit;
+}
+
+#expertise img {max-width: 300px;}
+
+/* Cambios de formato en EDUCACIÓN */
+
+time {font-size: 16px;}
+
+.fechasCursos {
+                background-color: #e74c3c;
+                color: white;
+}
+
+.curso li {font-size: 90%;}
+
+.curso img {padding-top: .5em;}
+
+.portfolio article {margin-top: 1em;}
+
+.descripcionProyecto {display: none;}
+
+.experiencia li::before,
+.educacion .curso li::before {content: '_';} 
+
+.cuerpoCurrele ul li,
+.curso ul li {font-size: 15px;}
+
+/* Cambios de formato en TRABAJO */
+
+.fechasCurrele {
+                background-color: #e74c3c;
+                margin-top: .75em;
+                padding-top: .5em;
+                padding-bottom: .5em;
+}
+
+.fechasCurrele time {color: white;}
+
+.h4 small {color: #95a5a6;}
+
+.skills h3 {color:#95A5A6;}
+
+/* Cambios de formato en CONTACTO */
+
+label {
+        font-size: 18px;
+        font-weight: 700;
+}
+
+.form-control:focus {border-color: #1abc9c/*#2ecc71*/;}
+
+.has-success .form-control:focus,
+.has-success .select2-search input[type="text"]:focus {
+                                                          border-color: #2ecc71;
+                                                          box-shadow: none;
+}
+
+.rrss li {margin-bottom: .5em;}
+.rrss li:hover, .rrss li:active {opacity: 0.8;}
+
+/* Formato del Mapa*/
+
+#map-canvas {
+            width: 100%;
+            height: 300px;
+}
+
+
+/* Cambios en el Formato del plugin de Proyectos */
+
+.p {
+    margin: 0px 0px 15px;
+    font-size: 15px;
+    line-height: 1.72222;
+}
+
+.btn-project {
+                text-align: center;
+                width: 100%;
+}
+
+.cbp-popup-singlePage .cbp-popup-navigation-wrap {background-color:#e74c3c; }
+.cbp-popup-singlePage-counter  {color: white;}
+
+.cbp-l-project-title, 
+.cbp-l-project-subtitle {color: #e74c3c;}
+
+.cbp-l-project-desc-title span,
+.cbp-l-project-details-title span {border-bottom: 1px solid #e74c3c;}
+
+.cbp-l-project-desc-title {border-bottom: 1px solid #e4b5b0;}
+
+.cbp-l-project-details-list strong {color: black;}
+
+
+.stuckMenu {
+background-color: white;
+}
+
+.stuckMenu #barra .nav  .menuItem{
+color: #e74c3c;
+}
+
+.isStuck {
+background-color:#e74c3c;
+}
+
+.isStuck #barra .nav  .menuItem{color:white;}
+
+.navbar {border-radius: 0px;}
